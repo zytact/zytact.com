@@ -31,7 +31,7 @@ export default function Home() {
                     <div className="mx-auto mb-0 mt-4 max-w-lg text-center">
                         <Description />
                     </div>
-                    <ProfileLinks className="m-0" />
+                    <ProfileLinks className="mt-24 p-0" />
                 </div>
             </div>
         </main>
