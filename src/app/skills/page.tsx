@@ -7,10 +7,6 @@ import type { Metadata } from 'next';
 export const metadata: Metadata = {
     title: 'Skills',
     description: 'watashi wa enjinia desu',
-    openGraph: {
-        title: 'Skills',
-        description: 'watashi wa enjinia desu',
-    },
 };
 
 export default function Skills() {
