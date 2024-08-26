@@ -67,13 +67,7 @@ const grid = [
     },
 ];
 
-export const Grid = ({
-    pattern,
-    size,
-}: {
-    pattern?: number[][];
-    size?: number;
-}) => {
+const Grid = ({ pattern, size }: { pattern?: number[][]; size?: number }) => {
     const p = pattern ?? [
         [Math.floor(Math.random() * 4) + 7, Math.floor(Math.random() * 6) + 1],
         [Math.floor(Math.random() * 4) + 7, Math.floor(Math.random() * 6) + 1],
@@ -97,7 +91,7 @@ export const Grid = ({
     );
 };
 
-export function GridPattern({ width, height, x, y, squares, ...props }: any) {
+function GridPattern({ width, height, x, y, squares, ...props }: any) {
     const patternId = useId();
 
     return (
