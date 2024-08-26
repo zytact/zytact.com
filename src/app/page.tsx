@@ -4,7 +4,6 @@ import { Description } from '@/components/ui/Description';
 import Name from '@/components/ui/Name';
 import { ProfileLinks } from '@/components/ui/ProfileLinks';
 import NavBar from '@/components/ui/NavBar';
-import SelfImage from '@/../public/self.jpg';
 import Image from 'next/image';
 
 export default function Home() {
@@ -21,7 +20,7 @@ export default function Home() {
                     <div className="m-3 h-20 w-20 p-0 lg:h-40 lg:w-40">
                         <Image
                             className="rounded-full"
-                            src={SelfImage}
+                            src="https://utfs.io/f/fb12dac7-f46d-4a6c-a557-a09b337c4f47-23l1o.jpg"
                             alt="Self"
                             width={120}
                             height={120}
