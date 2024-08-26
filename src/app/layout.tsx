@@ -7,6 +7,7 @@ const inter = Inter({ subsets: ['latin'] });
 export const metadata: Metadata = {
     title: 'Arnab Chakraborty (@zytact)',
     description: 'watashi wa enjinia desu',
+    metadataBase: new URL(`${process.env.NEXT_PUBLIC_BASE_URL}`),
 };
 
 export default function RootLayout({
