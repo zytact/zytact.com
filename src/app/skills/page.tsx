@@ -2,6 +2,16 @@ import { LinkPreview } from '@/components/ui/link-preview';
 import NavBar from '@/components/ui/NavBar';
 import { Spotlight } from '@/components/ui/Spotlight';
 import { useId } from 'react';
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    title: 'Skills',
+    description: 'watashi wa enjinia desu',
+    openGraph: {
+        title: 'Skills',
+        description: 'watashi wa enjinia desu',
+    },
+};
 
 export default function Skills() {
     return (
