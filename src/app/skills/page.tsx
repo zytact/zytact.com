@@ -9,31 +9,31 @@ export const metadata: Metadata = {
     description: 'watashi wa enjinia desu',
 };
 
-export default function Skills() {
+export default function Projects() {
     return (
         <main className="min-h-screen overflow-auto">
             <div className="relative flex h-full w-full flex-col items-center justify-center overflow-hidden rounded-md bg-black/[0.96] bg-white/[0.02] antialiased">
                 <Spotlight
-                    className="-top-96 left-0 md:-top-20 md:left-60"
+                    className="-top-40 left-0 md:-top-20 md:left-60"
                     fill="white"
                 />
                 <NavBar className="mt-4" />
                 <div className="px-5 py-20 lg:px-0 lg:py-60">
                     <div className="mx-auto grid max-w-7xl grid-cols-1 gap-10 sm:grid-cols-2 md:grid-cols-3 md:gap-2 lg:grid-cols-4">
-                        {grid.map((project) => (
+                        {grid.map((skill) => (
                             <div
-                                key={project.title}
-                                className="relative overflow-hidden rounded-3xl bg-gradient-to-b from-neutral-100 to-white p-6 dark:from-neutral-900 dark:to-neutral-950"
+                                key={skill.title}
+                                className="relative overflow-hidden rounded-3xl bg-gradient-to-b from-neutral-900 to-neutral-950 p-6"
                             >
                                 <Grid size={20} />
-                                <p className="relative z-20 text-center text-base font-bold text-neutral-800 dark:text-white">
-                                    {project.svg}
-                                    <LinkPreview url={project.link}>
-                                        {project.title}
+                                <p className="relative z-20 text-center text-base font-bold text-white">
+                                    {skill.svg}
+                                    <LinkPreview url={skill.link}>
+                                        {skill.title}
                                     </LinkPreview>
                                 </p>
-                                <p className="relative z-20 mt-4 text-center text-base font-normal text-neutral-600 dark:text-neutral-400">
-                                    {project.description}
+                                <p className="relative z-20 mt-4 text-center text-base font-normal text-neutral-400">
+                                    {skill.description}
                                 </p>
                             </div>
                         ))}
@@ -222,14 +222,14 @@ const Grid = ({ pattern, size }: { pattern?: number[][]; size?: number }) => {
     ];
     return (
         <div className="pointer-events-none absolute left-1/2 top-0 -ml-20 -mt-2 h-full w-full [mask-image:linear-gradient(white,transparent)]">
-            <div className="absolute inset-0 bg-gradient-to-r from-zinc-100/30 to-zinc-300/30 opacity-100 [mask-image:radial-gradient(farthest-side_at_top,white,transparent)] dark:from-zinc-900/30 dark:to-zinc-900/30">
+            <div className="absolute inset-0 bg-gradient-to-r from-zinc-100/30 from-zinc-900/30 to-zinc-300/30 to-zinc-900/30 opacity-100 [mask-image:radial-gradient(farthest-side_at_top,white,transparent)]">
                 <GridPattern
                     width={size ?? 20}
                     height={size ?? 20}
                     x="-12"
                     y="4"
                     squares={p}
-                    className="absolute inset-0 h-full w-full fill-black/10 stroke-black/10 mix-blend-overlay dark:fill-white/10 dark:stroke-white/10"
+                    className="absolute inset-0 h-full w-full fill-black/10 fill-white/10 stroke-black/10 stroke-white/10 mix-blend-overlay"
                 />
             </div>
         </div>
