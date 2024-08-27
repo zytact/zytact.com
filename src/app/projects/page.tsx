@@ -14,7 +14,7 @@ export default function Projects() {
         <main className="min-h-screen overflow-auto">
             <div className="relative flex h-full w-full flex-col items-center justify-center overflow-hidden rounded-md bg-black/[0.96] bg-white/[0.02] antialiased">
                 <Spotlight
-                    className="-top-40 left-0 md:-top-20 md:left-60"
+                    className="md:-top-30 fixed -top-28 left-0 md:right-72"
                     fill="white"
                 />
                 <NavBar className="mt-4" />
