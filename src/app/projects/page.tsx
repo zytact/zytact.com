@@ -3,6 +3,7 @@ import NavBar from '@/components/ui/NavBar';
 import { Spotlight } from '@/components/ui/Spotlight';
 import { useId } from 'react';
 import type { Metadata } from 'next';
+import Background from '@/components/ui/Background';
 
 export const metadata: Metadata = {
     title: 'Projects',
@@ -13,10 +14,7 @@ export default function Projects() {
     return (
         <main className="min-h-screen overflow-auto">
             <div className="relative flex h-full w-full flex-col items-center justify-center overflow-hidden rounded-md bg-black/[0.96] bg-white/[0.02] antialiased">
-                <Spotlight
-                    className="md:-top-30 fixed -top-28 left-0 md:right-72"
-                    fill="white"
-                />
+                <Background />
                 <NavBar className="mt-4" />
                 <div className="px-5 py-20 lg:px-0 lg:py-60">
                     <div className="mx-auto grid max-w-7xl grid-cols-1 gap-10 sm:grid-cols-2 md:grid-cols-3 md:gap-2 lg:grid-cols-4">
