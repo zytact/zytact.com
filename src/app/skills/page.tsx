@@ -4,6 +4,7 @@ import { Spotlight } from '@/components/ui/Spotlight';
 import { useId } from 'react';
 import type { Metadata } from 'next';
 import Background from '@/components/ui/Background';
+import { JSX } from 'react/jsx-dev-runtime';
 
 export const metadata: Metadata = {
     title: 'Skills',
@@ -152,6 +153,14 @@ const PythonLogo = (
 );
 
 const grid = [
+interface GridInfo {
+    title: string;
+    description: string;
+    link: string;
+    svg: JSX.Element;
+}
+
+const grid: GridInfo[] = [
     {
         title: 'HTML',
         description:
