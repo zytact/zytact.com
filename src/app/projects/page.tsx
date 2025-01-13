@@ -1,6 +1,5 @@
 import { LinkPreview } from '@/components/ui/link-preview';
 import NavBar from '@/components/ui/NavBar';
-import { Spotlight } from '@/components/ui/Spotlight';
 import { useId } from 'react';
 import type { Metadata } from 'next';
 import Background from '@/components/ui/Background';
