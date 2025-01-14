@@ -94,7 +94,20 @@ const Grid = ({ pattern, size }: { pattern?: number[][]; size?: number }) => {
     );
 };
 
-function GridPattern({ width, height, x, y, squares, ...props }: any) {
+function GridPattern({
+    width,
+    height,
+    x,
+    y,
+    squares,
+    ...props
+}: {
+    width: number;
+    height: number;
+    x: string;
+    y: string;
+    squares: number[][];
+}) {
     const patternId = useId();
 
     return (
@@ -119,7 +132,7 @@ function GridPattern({ width, height, x, y, squares, ...props }: any) {
             />
             {squares && (
                 <svg x={x} y={y} className="overflow-visible">
-                    {squares.map(([x, y]: any) => (
+                    {squares.map(([x, y]: number[]) => (
                         <rect
                             strokeWidth="0"
                             key={`${x}-${y}`}
