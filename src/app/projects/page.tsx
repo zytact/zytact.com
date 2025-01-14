@@ -107,6 +107,7 @@ function GridPattern({
     x: string;
     y: string;
     squares: number[][];
+    className: string;
 }) {
     const patternId = useId();
 
