@@ -10,7 +10,7 @@ export const metadata: Metadata = {
         default: 'Arnab Chakraborty (@zytact)',
     },
     description: 'watashi wa enjinia desu',
-    // metadataBase: new URL(`${process.env.NEXT_PUBLIC_BASE_URL}`),
+    metadataBase: new URL(`${process.env.NEXT_PUBLIC_BASE_URL}`),
 };
 
 export default function RootLayout({
