@@ -20,7 +20,7 @@ export default function Skills() {
                     <div className="mx-auto grid max-w-7xl grid-cols-1 gap-10 sm:grid-cols-2 md:grid-cols-3 md:gap-2 lg:grid-cols-4">
                         {grid.map((skill) => (
                             <div
-                                key={skill.title}
+                                key={skill.id}
                                 className="relative overflow-hidden rounded-3xl bg-gradient-to-b from-neutral-900 to-neutral-950 p-6"
                             >
                                 <Grid size={20} />
@@ -165,15 +165,17 @@ const PythonLogo = (
     </svg>
 );
 
-interface GridInfo {
+type Skill = {
+    id: number;
     title: string;
     description: string;
     link: string;
     svg: JSX.Element;
-}
+};
 
-const grid: GridInfo[] = [
+const grid: Skill[] = [
     {
+        id: 1,
         title: 'HTML',
         description:
             'Hypertext Markup Language is the standard markup language for documents designed to be displayed in a web browser. It defines the content and structure of web content.',
@@ -181,6 +183,7 @@ const grid: GridInfo[] = [
         svg: HtmlLogo,
     },
     {
+        id: 2,
         title: 'CSS',
         description:
             'Cascading Style Sheets is a style sheet language used for specifying the presentation and styling of a document written in a markup language such as HTML or XML. ',
@@ -188,6 +191,7 @@ const grid: GridInfo[] = [
         svg: CssLogo,
     },
     {
+        id: 3,
         title: 'Tailwind CSS',
         description:
             'Tailwind CSS is an open-source CSS framework. The main feature of this library is that, unlike other CSS frameworks like Bootstrap, it does not provide a series of predefined classes for elements such as buttons or tables.',
@@ -195,6 +199,7 @@ const grid: GridInfo[] = [
         svg: TailwindLogo,
     },
     {
+        id: 4,
         title: 'JavaScript',
         description:
             'JavaScript, often abbreviated as JS, is a programming language and core technology of the Web, alongside HTML and CSS. 99% of websites use JavaScript on the client side for webpage behavior. ',
@@ -202,6 +207,7 @@ const grid: GridInfo[] = [
         svg: JavascriptLogo,
     },
     {
+        id: 5,
         title: 'TypeScript',
         description:
             'TypeScript is a free and open-source high-level programming language developed by Microsoft that adds static typing with optional type annotations to JavaScript. ',
@@ -209,6 +215,7 @@ const grid: GridInfo[] = [
         svg: TypescriptLogo,
     },
     {
+        id: 6,
         title: 'Node.js',
         description:
             'Node.js is a JavaScript runtime built on Chrome’s V8 JavaScript engine. Node.js uses an event-driven, non-blocking I/O model that makes it lightweight and efficient. Node.js is used for server-side scripting.',
@@ -216,6 +223,7 @@ const grid: GridInfo[] = [
         svg: NodejsLogo,
     },
     {
+        id: 7,
         title: 'Express',
         description:
             'Express.js is a web application framework for Node.js, released as free and open-source software under the MIT License. It is designed for building web applications and APIs.',
@@ -223,6 +231,7 @@ const grid: GridInfo[] = [
         svg: ExpressjsLogo,
     },
     {
+        id: 8,
         title: 'React.js',
         description:
             'React is a free and open-source front-end JavaScript library for building user interfaces. It is maintained by Facebook and a community of individual developers and companies. ',
@@ -230,6 +239,7 @@ const grid: GridInfo[] = [
         svg: ReactLogo,
     },
     {
+        id: 9,
         title: 'Python',
         description:
             'Python is a high-level, interpreted, general-purpose programming language. Its design philosophy emphasizes code readability, and its syntax allows programmers to express concepts in fewer lines of code than would be possible in languages such as C++ or Java.',

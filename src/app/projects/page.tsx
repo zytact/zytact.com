@@ -19,7 +19,7 @@ export default function Projects() {
                     <div className="mx-auto grid max-w-7xl grid-cols-1 gap-10 sm:grid-cols-2 md:grid-cols-3 md:gap-2 lg:grid-cols-4">
                         {grid.map((project) => (
                             <div
-                                key={project.title}
+                                key={project.id}
                                 className="relative overflow-hidden rounded-3xl bg-gradient-to-b from-neutral-900 to-neutral-950 p-6"
                             >
                                 <Grid size={20} />
@@ -40,29 +40,41 @@ export default function Projects() {
     );
 }
 
-const grid = [
+type Project = {
+    id: number;
+    title: string;
+    description: string;
+    link: string;
+};
+
+const grid: Project[] = [
     {
+        id: 1,
         title: 'ExifTuner',
         description: 'An Web App to modify Exif Data in Images using Next.js.',
         link: 'https://exiftuner.zytact.in/',
     },
     {
+        id: 2,
         title: 'Jiyu',
         description:
             'A simple anime list tracker for your phone using Flutter. This app uses the Jikan API (unofficial Myanimelist API) to fetch images.',
         link: 'https://github.com/zytact/Jiyu',
     },
     {
+        id: 3,
         title: 'Sorting Visualizer',
         description: 'A simple sorting visualizer made with Python.',
         link: 'https://github.com/zytact/Sorting-Visualizer',
     },
     {
+        id: 4,
         title: 'Informer Python',
         description: 'Whatsapp online tracker written in Python.',
         link: 'https://github.com/zytact/Informer-python',
     },
     {
+        id: 5,
         title: 'No Save Chat',
         description:
             'An app to help you quickly start a whatsapp chat without saving phone number using Flutter.',
