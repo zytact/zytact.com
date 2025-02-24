@@ -40,12 +40,7 @@ export default function Projects() {
     );
 }
 
-type Project = {
-    id: number;
-    title: string;
-    description: string;
-    link: string;
-};
+type Project = { id: number; title: string; description: string; link: string };
 
 const grid: Project[] = [
     {
@@ -63,18 +58,24 @@ const grid: Project[] = [
     },
     {
         id: 3,
+        title: 'Strokeshare',
+        description: 'A Whiteboarding app made with Next.js and React Konva',
+        link: 'https://github.com/zytact/strokeshare',
+    },
+    {
+        id: 4,
         title: 'Sorting Visualizer',
         description: 'A simple sorting visualizer made with Python.',
         link: 'https://github.com/zytact/Sorting-Visualizer',
     },
     {
-        id: 4,
+        id: 5,
         title: 'Informer Python',
         description: 'Whatsapp online tracker written in Python.',
         link: 'https://github.com/zytact/Informer-python',
     },
     {
-        id: 5,
+        id: 6,
         title: 'No Save Chat',
         description:
             'An app to help you quickly start a whatsapp chat without saving phone number using Flutter.',
