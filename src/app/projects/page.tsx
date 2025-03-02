@@ -47,7 +47,7 @@ const grid: Project[] = [
         id: 1,
         title: 'ExifTuner',
         description: 'An Web App to modify Exif Data in Images using Next.js.',
-        link: 'https://exiftuner.zytact.in/',
+        link: 'https://exiftuner.zytact.com/',
     },
     {
         id: 2,
@@ -60,7 +60,7 @@ const grid: Project[] = [
         id: 3,
         title: 'Strokeshare',
         description: 'A Whiteboarding app made with Next.js and React Konva',
-        link: 'https://github.com/zytact/strokeshare',
+        link: 'https://strokeshare.zytact.com',
     },
     {
         id: 4,
