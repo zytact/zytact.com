@@ -65,7 +65,7 @@ const grid: Project[] = [
         title: 'ExifTuner',
         year: '2024',
         description:
-            'An Web App to modify Exif Data in Images using Next.js and Piexif JS.',
+            'A Web App to modify Exif Data in Images using Next.js and Piexif JS.',
         link: 'https://exiftuner.zytact.com/',
     },
     {
