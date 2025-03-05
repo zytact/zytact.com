@@ -56,14 +56,16 @@ const grid: Project[] = [
         id: 1,
         title: 'Strokeshare',
         year: '2025',
-        description: 'A Whiteboarding app made with Next.js and React Konva',
+        description:
+            'A Whiteboarding app made with Next.js, Tailwind CSS, Shadcn UI and React Konva.',
         link: 'https://strokeshare.zytact.com',
     },
     {
         id: 2,
         title: 'ExifTuner',
         year: '2024',
-        description: 'An Web App to modify Exif Data in Images using Next.js.',
+        description:
+            'An Web App to modify Exif Data in Images using Next.js and Piexif JS.',
         link: 'https://exiftuner.zytact.com/',
     },
     {
