@@ -28,6 +28,9 @@ export default function Projects() {
                                         {project.title}
                                     </LinkPreview>
                                 </p>
+                                <p className="relative z-20 text-center text-base font-medium text-neutral-400">
+                                    {project.year}
+                                </p>
                                 <p className="relative z-20 mt-4 text-center text-base font-normal text-neutral-400">
                                     {project.description}
                                 </p>
@@ -40,44 +43,55 @@ export default function Projects() {
     );
 }
 
-type Project = { id: number; title: string; description: string; link: string };
 interface Project {
+    id: number;
+    title: string;
+    year: string;
+    description: string;
+    link: string;
+}
 
 const grid: Project[] = [
     {
         id: 1,
+        title: 'Strokeshare',
+        year: '2025',
+        description: 'A Whiteboarding app made with Next.js and React Konva',
+        link: 'https://strokeshare.zytact.com',
+    },
+    {
+        id: 2,
         title: 'ExifTuner',
+        year: '2024',
         description: 'An Web App to modify Exif Data in Images using Next.js.',
         link: 'https://exiftuner.zytact.com/',
     },
     {
-        id: 2,
+        id: 3,
         title: 'Jiyu',
+        year: '2020',
         description:
             'A simple anime list tracker for your phone using Flutter. This app uses the Jikan API (unofficial Myanimelist API) to fetch images.',
         link: 'https://github.com/zytact/Jiyu',
     },
     {
-        id: 3,
-        title: 'Strokeshare',
-        description: 'A Whiteboarding app made with Next.js and React Konva',
-        link: 'https://strokeshare.zytact.com',
-    },
-    {
         id: 4,
         title: 'Sorting Visualizer',
+        year: '2021',
         description: 'A simple sorting visualizer made with Python.',
         link: 'https://github.com/zytact/Sorting-Visualizer',
     },
     {
         id: 5,
         title: 'Informer Python',
+        year: '2020',
         description: 'Whatsapp online tracker written in Python.',
         link: 'https://github.com/zytact/Informer-python',
     },
     {
         id: 6,
         title: 'No Save Chat',
+        year: '2020',
         description:
             'An app to help you quickly start a whatsapp chat without saving phone number using Flutter.',
         link: 'https://github.com/zytact/No-Save-Chat',
