@@ -165,13 +165,13 @@ const PythonLogo = (
     </svg>
 );
 
-type Skill = {
+interface Skill {
     id: number;
     title: string;
     description: string;
     link: string;
     svg: JSX.Element;
-};
+}
 
 const grid: Skill[] = [
     {

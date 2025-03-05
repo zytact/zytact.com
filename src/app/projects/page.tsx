@@ -41,6 +41,7 @@ export default function Projects() {
 }
 
 type Project = { id: number; title: string; description: string; link: string };
+interface Project {
 
 const grid: Project[] = [
     {
