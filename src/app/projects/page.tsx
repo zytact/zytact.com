@@ -7,6 +7,9 @@ import Background from '@/components/ui/Background';
 export const metadata: Metadata = {
     title: 'Projects',
     description: 'watashi wa enjinia desu',
+    alternates: {
+        canonical: `${process.env.NEXT_PUBLIC_BASE_URL}/projects`,
+    },
 };
 
 export default function Projects() {

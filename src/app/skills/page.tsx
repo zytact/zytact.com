@@ -8,6 +8,9 @@ import { JSX } from 'react/jsx-dev-runtime';
 export const metadata: Metadata = {
     title: 'Skills',
     description: 'watashi wa enjinia desu',
+    alternates: {
+        canonical: `${process.env.NEXT_PUBLIC_BASE_URL}/skills`,
+    },
 };
 
 export default function Skills() {

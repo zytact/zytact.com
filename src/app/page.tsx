@@ -6,6 +6,13 @@ import { ProfileLinks } from '@/components/ui/ProfileLinks';
 import NavBar from '@/components/ui/NavBar';
 import Image from 'next/image';
 import Background from '@/components/ui/Background';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+    alternates: {
+        canonical: `${process.env.NEXT_PUBLIC_BASE_URL}`,
+    },
+};
 
 export default function Home() {
     return (
