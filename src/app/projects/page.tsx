@@ -60,7 +60,7 @@ const grid: Project[] = [
         title: 'Strokeshare',
         year: '2025',
         description:
-            'A Whiteboarding app made with Next.js, Tailwind CSS, Shadcn UI and React Konva.',
+            'A Whiteboarding app made with Next.js, Tailwind CSS, Shadcn UI, React Konva and Vitest.',
         link: 'https://strokeshare.zytact.com',
     },
     {
