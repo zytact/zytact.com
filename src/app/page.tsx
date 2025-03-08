@@ -5,7 +5,7 @@ import Name from '@/components/ui/Name';
 import { ProfileLinks } from '@/components/ui/ProfileLinks';
 import NavBar from '@/components/ui/NavBar';
 import Image from 'next/image';
-import Background from '@/components/ui/Background';
+import Squares from '@/components/ui/Squares';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -16,14 +16,19 @@ export const metadata: Metadata = {
 
 export default function Home() {
     return (
-        <main className="min-h-screen overflow-auto">
-            <div className="relative flex h-full w-full flex-col items-center justify-center overflow-hidden rounded-md antialiased">
+        <div className="min-h-screen">
+            <Squares
+                speed={0.2}
+                className="fixed inset-0 z-0"
+                direction="diagonal"
+            />
+
+            <main className="relative z-10 flex min-h-screen w-full flex-col items-center">
                 <Spotlight
                     className="-top-40 left-0 md:-top-20 md:left-60"
                     fill="white"
                 />
 
-                <Background />
                 <NavBar className="mt-4" />
                 <div className="relative z-10 mx-auto mt-12 flex w-full max-w-7xl flex-col items-center justify-center p-4 lg:mt-16">
                     <div className="m-3 h-20 w-20 p-0 lg:h-40 lg:w-40">
@@ -43,7 +48,7 @@ export default function Home() {
 
                     <ProfileLinks className="mt-24 p-0" />
                 </div>
-            </div>
-        </main>
+            </main>
+        </div>
     );
 }

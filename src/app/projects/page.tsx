@@ -2,7 +2,7 @@ import { LinkPreview } from '@/components/ui/link-preview';
 import NavBar from '@/components/ui/NavBar';
 import { useId } from 'react';
 import type { Metadata } from 'next';
-import Background from '@/components/ui/Background';
+import Squares from '@/components/ui/Squares';
 
 export const metadata: Metadata = {
     title: 'Projects',
@@ -14,9 +14,13 @@ export const metadata: Metadata = {
 
 export default function Projects() {
     return (
-        <main className="min-h-screen overflow-auto">
-            <div className="relative flex h-full w-full flex-col items-center justify-center overflow-hidden rounded-md bg-black/[0.96] bg-white/[0.02] antialiased">
-                <Background />
+        <div className="min-h-screen">
+            <Squares
+                speed={0.2}
+                className="fixed inset-0 z-0"
+                direction="diagonal"
+            />
+            <main className="relative z-10 flex h-full w-full flex-col items-center justify-center overflow-hidden rounded-md bg-black/[0.96] bg-white/[0.02] antialiased">
                 <NavBar className="mt-4" />
                 <div className="px-5 py-20 lg:px-0 lg:py-60">
                     <div className="mx-auto grid max-w-7xl grid-cols-1 gap-10 sm:grid-cols-2 md:grid-cols-3 md:gap-2 lg:grid-cols-4">
@@ -41,8 +45,8 @@ export default function Projects() {
                         ))}
                     </div>
                 </div>
-            </div>
-        </main>
+            </main>
+        </div>
     );
 }
 
