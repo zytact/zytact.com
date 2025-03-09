@@ -27,7 +27,7 @@ export default function Projects() {
                         {grid.map((project) => (
                             <div
                                 key={project.id}
-                                className="relative overflow-hidden rounded-3xl bg-gradient-to-b from-neutral-900 to-neutral-950 p-6"
+                                className="relative overflow-hidden rounded-3xl bg-linear-to-b from-neutral-900 to-neutral-950 p-6"
                             >
                                 <Grid size={20} />
                                 <p className="relative z-20 text-center text-base font-bold text-white">
@@ -117,7 +117,7 @@ const Grid = ({ pattern, size }: { pattern?: number[][]; size?: number }) => {
     ];
     return (
         <div className="pointer-events-none absolute left-1/2 top-0 -ml-20 -mt-2 h-full w-full [mask-image:linear-gradient(white,transparent)]">
-            <div className="absolute inset-0 bg-gradient-to-r from-zinc-100/30 from-zinc-900/30 to-zinc-300/30 to-zinc-900/30 opacity-100 [mask-image:radial-gradient(farthest-side_at_top,white,transparent)]">
+            <div className="absolute inset-0 bg-linear-to-r from-zinc-100/30 from-zinc-900/30 to-zinc-300/30 to-zinc-900/30 opacity-100 [mask-image:radial-gradient(farthest-side_at_top,white,transparent)]">
                 <GridPattern
                     width={size ?? 20}
                     height={size ?? 20}
