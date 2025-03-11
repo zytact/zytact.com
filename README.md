@@ -1,4 +1,4 @@
-# zytact.in
+# zytact.com
 
 This is a my [website](https://zytact.in/) bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
