@@ -41,7 +41,7 @@ const TwitterLogo = () => {
 const LinkedInLogo = () => {
     return (
         <Link
-            href="https://www.linkedin.com/in/arnab-chakraborty-95b65228a/"
+            href="https://www.linkedin.com/in/zytact/"
             target="_blank"
             rel="noreferrer noopener"
         >
