@@ -1869,7 +1869,7 @@ const grid: Skill[] = [
         id: 10,
         title: 'TanStack Query',
         description:
-            'Headless, type-safe, & powerful utilities for Web Applications, Routing, State Management, Data Visualization, Datagrids/Tables, and more.',
+            'Powerful asynchronous state management for TS/JS, React, Solid, Vue, Svelte and Angular',
         link: 'https://tanstack.com/',
         svg: tanStackQueryLogo,
     },
