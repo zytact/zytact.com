@@ -69,6 +69,14 @@ const grid: Project[] = [
     },
     {
         id: 2,
+        title: 'InvenTrack',
+        year: '2025',
+        description:
+            'An inventory management system with AI recommendations made with Next.js, Tailwind CSS, Shadcn UI, TanStack Query, Clerk, Drizzle ORM, PostgreSQL and Gemini.',
+        link: 'https://inventrack.zytact.com',
+    },
+    {
+        id: 3,
         title: 'ExifTuner',
         year: '2024',
         description:
@@ -76,7 +84,7 @@ const grid: Project[] = [
         link: 'https://exiftuner.zytact.com/',
     },
     {
-        id: 3,
+        id: 4,
         title: 'Jiyu',
         year: '2020',
         description:
@@ -84,21 +92,21 @@ const grid: Project[] = [
         link: 'https://github.com/zytact/Jiyu',
     },
     {
-        id: 4,
+        id: 5,
         title: 'Sorting Visualizer',
         year: '2021',
         description: 'A simple sorting visualizer made with Python.',
         link: 'https://github.com/zytact/Sorting-Visualizer',
     },
     {
-        id: 5,
+        id: 6,
         title: 'Informer Python',
         year: '2020',
         description: 'Whatsapp online tracker written in Python.',
         link: 'https://github.com/zytact/Informer-python',
     },
     {
-        id: 6,
+        id: 7,
         title: 'No Save Chat',
         year: '2020',
         description:
@@ -116,7 +124,7 @@ const Grid = ({ pattern, size }: { pattern?: number[][]; size?: number }) => {
         [Math.floor(Math.random() * 4) + 7, Math.floor(Math.random() * 6) + 1],
     ];
     return (
-        <div className="pointer-events-none absolute left-1/2 top-0 -ml-20 -mt-2 h-full w-full [mask-image:linear-gradient(white,transparent)]">
+        <div className="pointer-events-none absolute top-0 left-1/2 -mt-2 -ml-20 h-full w-full [mask-image:linear-gradient(white,transparent)]">
             <div className="absolute inset-0 bg-linear-to-r from-zinc-100/30 from-zinc-900/30 to-zinc-300/30 to-zinc-900/30 opacity-100 [mask-image:radial-gradient(farthest-side_at_top,white,transparent)]">
                 <GridPattern
                     width={size ?? 20}
