@@ -100,7 +100,10 @@ export const LinkPreview = ({
             >
                 <HoverCardPrimitive.Trigger
                     onMouseMove={handleMouseMove}
-                    className={cn('text-white', className)}
+                    className={cn(
+                        'bg-gradient-to-r from-[rgb(var(--accent-blue-light))] to-[rgb(var(--accent-blue))] bg-clip-text text-transparent',
+                        className
+                    )}
                     href={url}
                 >
                     {children}
