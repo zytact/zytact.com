@@ -24,12 +24,12 @@ export default function Home() {
 
             <main className="relative z-10 flex min-h-screen w-full flex-col items-center">
                 <Spotlight
-                    className="-top-40 left-0 md:-top-20 md:left-60"
+                    className="-top-20 left-0 md:-top-20 md:left-72"
                     fill="rgb(var(--accent-blue))"
                 />
 
                 <NavBar className="mt-4" />
-                <div className="relative z-10 mx-auto mt-40 flex w-full max-w-7xl flex-col items-center justify-center p-4 lg:mt-48">
+                <div className="relative z-10 mx-auto mt-24 flex w-full max-w-7xl flex-col items-center justify-center p-4 lg:mt-48">
                     <Name />
                     <div className="mx-auto mt-4 mb-0 max-w-lg text-center">
                         <Description />
