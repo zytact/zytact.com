@@ -72,7 +72,7 @@ const grid: Project[] = [
         title: 'InvenTrack',
         year: '2025',
         description:
-            'An inventory management system with AI recommendations made with Next.js, Tailwind CSS, Shadcn UI, TanStack Query, Clerk, Drizzle ORM, PostgreSQL and Gemini.',
+            'An inventory management system with the power of AI, made with Next.js, Tailwind CSS, Shadcn UI, TanStack Query, Clerk, Drizzle ORM, PostgreSQL and Gemini.',
         link: 'https://inventrack.zytact.com',
     },
     {
