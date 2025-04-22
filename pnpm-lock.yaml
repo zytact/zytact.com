@@ -9,7 +9,7 @@ importers:
   .:
     dependencies:
       '@radix-ui/react-hover-card':
-        specifier: ^1.1.7
+        specifier: ^1.1.11
         version: 1.1.11(@types/react-dom@19.1.2(@types/react@19.1.2))(@types/react@19.1.2)(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       '@tabler/icons-react':
         specifier: ^3.31.0
@@ -24,7 +24,7 @@ importers:
         specifier: ^11.18.2
         version: 11.18.2(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       next:
-        specifier: ^15.3.0
+        specifier: ^15.3.1
         version: 15.3.1(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
       qss:
         specifier: ^3.0.0
@@ -46,7 +46,7 @@ importers:
         specifier: ^15.3.1
         version: 15.3.1
       '@opennextjs/cloudflare':
-        specifier: ^1.0.0-beta.3
+        specifier: 1.0.0-beta.3
         version: 1.0.0-beta.3(wrangler@4.12.1)
       '@tailwindcss/postcss':
         specifier: ^4.1.4
@@ -61,7 +61,7 @@ importers:
         specifier: ^19.1.2
         version: 19.1.2(@types/react@19.1.2)
       eslint:
-        specifier: ^9.24.0
+        specifier: ^9.25.1
         version: 9.25.1(jiti@2.4.2)
       eslint-config-next:
         specifier: 15.1.3
