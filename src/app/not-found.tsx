@@ -13,7 +13,7 @@ export default function NotFound() {
             <main className="relative z-10 flex h-full w-full flex-col items-center justify-center overflow-hidden rounded-md bg-black/[0.96] bg-white/[0.02] antialiased">
                 <NavBar className="mt-4" />
                 <div className="flex flex-col items-center justify-center px-4 py-20 text-center lg:py-40">
-                    <h1 className="text-4xl font-extrabold tracking-tight text-white sm:text-5xl">
+                    <h1 className="text-4xl font-extrabold tracking-tight text-[rgb(var(--accent-blue))] sm:text-5xl">
                         404
                     </h1>
                     <p className="mt-4 text-lg text-[rgba(var(--accent-blue-light),0.8)]">
@@ -25,7 +25,7 @@ export default function NotFound() {
                     </p>
                     <Link
                         href="/"
-                        className="mt-8 rounded-md border border-[rgb(var(--accent-blue))] bg-black px-4 py-2 text-sm font-medium text-white transition-colors hover:bg-[rgba(var(--accent-blue),0.1)]"
+                        className="mt-8 rounded-md border border-[rgb(var(--accent-blue))] bg-black px-4 py-2 text-sm font-medium text-[rgb(var(--accent-blue))] transition-colors hover:bg-[rgba(var(--accent-blue),0.1)]"
                     >
                         Return Home
                     </Link>
