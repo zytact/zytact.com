@@ -1,5 +1,6 @@
 'use client';
 import Link from 'next/link';
+import { FileDown } from 'lucide-react';
 
 export function ProfileLinks({ className }: { className?: string }) {
     return (
@@ -12,9 +13,23 @@ export function ProfileLinks({ className }: { className?: string }) {
             <DiscordLogo />
             <InstagramLogo />
             <EmailLogo />
+            <FileDownLogo />
         </div>
     );
 }
+
+const FileDownLogo = () => {
+    return (
+        <Link
+            href="https://gtamogp5a0.ufs.sh/f/wMjvkWfyiEHlF9dpeAM9B5w63tgHxFDG4LyPoEJbm0n1KSZ8"
+            target="_blank"
+            rel="noreferrer noopener"
+            title="Download Resume"
+        >
+            <FileDown className="size-12 text-[rgba(var(--accent-blue),0.7)] transition-all duration-300 hover:scale-90 hover:text-[rgb(var(--accent-blue))]" />
+        </Link>
+    );
+};
 
 const TwitterLogo = () => {
     return (
