@@ -5,7 +5,7 @@ import { FileDown } from 'lucide-react';
 export function ProfileLinks({ className }: { className?: string }) {
     return (
         <div
-            className={`${className} m-40 flex justify-center gap-4 text-center`}
+            className={`${className} m-40 flex w-full flex-wrap justify-center gap-4 text-center`}
         >
             <TwitterLogo />
             <LinkedInLogo />
