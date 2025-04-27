@@ -58,6 +58,37 @@
         }
     }
 
+    @keyframes slide-in {
+        0% {
+            transform: translateY(2rem);
+            opacity: 0;
+        }
+        100% {
+            transform: translateY(0rem);
+            opacity: 1;
+        }
+    }
+
+    @keyframes slide-out {
+        0% {
+            transform: translateY(0rem);
+            opacity: 1;
+        }
+        100% {
+            transform: translateY(2rem);
+            opacity: 0;
+        }
+    }
+
+    ::view-transition-old(page) {
+        animation: slide-out 0.5s ease-out both;
+    }
+
+    ::view-transition-new(page) {
+        animation: slide-in 0.5s ease-out both;
+        animation-delay: 500ms;
+    }
+
     body {
         color: rgb(var(--foreground-rgb));
         background: linear-gradient(
