@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
 import { Analytics } from '@vercel/analytics/react';
 import './globals.css';
+import NavBar from '@/components/ui/NavBar';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -27,7 +28,11 @@ export default function RootLayout({
                 src="https://static.cloudflareinsights.com/beacon.min.js"
                 data-cf-beacon='{"token": "0c1d64d1a6724f5383654f258ebaf4e4"}'
             ></script>
-            <body className={inter.className}>{children}</body>
+            <body className={inter.className}>
+                <div className="relative z-50 flex w-full flex-col items-center justify-center px-4 pt-4">
+                    <NavBar />
+                </div>
+            </body>
         </html>
     );
 }

@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import NavBar from '@/components/ui/NavBar';
 import Squares from '@/components/ui/Squares';
 
 export default function NotFound() {
@@ -10,8 +9,7 @@ export default function NotFound() {
                 className="fixed inset-0 z-0"
                 direction="diagonal"
             />
-            <main className="relative z-10 flex h-full w-full flex-col items-center justify-center overflow-hidden rounded-md bg-black/[0.96] bg-white/[0.02] antialiased">
-                <NavBar className="mt-4" />
+            <main className="relative z-10 h-full w-full items-center justify-center overflow-hidden rounded-md bg-black/[0.96] bg-white/[0.02] antialiased">
                 <div className="flex flex-col items-center justify-center px-4 py-20 text-center lg:py-40">
                     <h1 className="text-4xl font-extrabold tracking-tight text-[rgb(var(--accent-blue))] sm:text-5xl">
                         404
