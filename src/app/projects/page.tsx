@@ -1,7 +1,6 @@
 import { LinkPreview } from '@/components/ui/link-preview';
 import { useId } from 'react';
 import type { Metadata } from 'next';
-import Squares from '@/components/ui/Squares';
 
 export const metadata: Metadata = {
     title: 'Projects',
@@ -13,12 +12,7 @@ export const metadata: Metadata = {
 
 export default function Projects() {
     return (
-        <div className="min-h-screen">
-            <Squares
-                speed={0.2}
-                className="fixed inset-0 z-0"
-                direction="diagonal"
-            />
+        <>
             <main className="relative z-10 h-full w-full overflow-hidden rounded-md bg-black/[0.96] bg-white/[0.02] antialiased">
                 <div className="px-5 py-20 lg:px-0 lg:py-60">
                     <div className="mx-auto grid max-w-7xl grid-cols-1 gap-10 sm:grid-cols-2 md:grid-cols-3 md:gap-2 lg:grid-cols-4">
@@ -44,7 +38,7 @@ export default function Projects() {
                     </div>
                 </div>
             </main>
-        </div>
+        </>
     );
 }
 

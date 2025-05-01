@@ -4,6 +4,7 @@ import { Analytics } from '@vercel/analytics/react';
 import './globals.css';
 import NavBar from '@/components/ui/NavBar';
 import { unstable_ViewTransition as ViewTransition } from 'react';
+import Squares from '@/components/ui/Squares';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -33,7 +34,14 @@ export default function RootLayout({
                 <div className="relative z-50 flex w-full flex-col items-center justify-center px-4 pt-4">
                     <NavBar />
                 </div>
-                <ViewTransition name="page">{children}</ViewTransition>
+                <div className="min-h-screen">
+                    <Squares
+                        speed={0.2}
+                        className="fixed inset-0 z-0"
+                        direction="diagonal"
+                    />
+                    <ViewTransition name="page">{children}</ViewTransition>
+                </div>
             </body>
         </html>
     );

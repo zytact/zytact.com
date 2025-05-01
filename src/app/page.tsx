@@ -3,7 +3,6 @@ import { Spotlight } from '@/components/ui/Spotlight';
 import { Description } from '@/components/ui/Description';
 import Name from '@/components/ui/Name';
 import { ProfileLinks } from '@/components/ui/ProfileLinks';
-import Squares from '@/components/ui/Squares';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -14,13 +13,7 @@ export const metadata: Metadata = {
 
 export default function Home() {
     return (
-        <div className="min-h-screen">
-            <Squares
-                speed={0.2}
-                className="fixed inset-0 z-0"
-                direction="diagonal"
-            />
-
+        <>
             <main className="relative z-10 min-h-screen w-full">
                 <Spotlight
                     className="-top-50 left-0 md:left-72"
@@ -36,6 +29,6 @@ export default function Home() {
                     <ProfileLinks className="mt-24 p-0" />
                 </div>
             </main>
-        </div>
+        </>
     );
 }
